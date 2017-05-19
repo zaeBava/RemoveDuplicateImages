@@ -150,7 +150,7 @@ namespace Compare
         {
             
             string destinationPath = folderPath + "\\_Duplicate\\";
-            var allImages = LoadAllImagesInFolder(folderPath);
+             var allImages = LoadAllImagesInFolder(folderPath);
 
             if (!Directory.Exists(destinationPath))
                     Directory.CreateDirectory(destinationPath);
