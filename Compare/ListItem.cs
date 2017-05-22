@@ -9,7 +9,13 @@ namespace Compare
 {
     public class ListItem
     {
-        public Byte[,] GrayscaleValue { get; set; }
+        public Byte[] GrayscaleValue { get; set; }
         public String OriginalImagePath { get; set; }
+
+        public ListItem(Byte[] value, string path)
+        {
+            GrayscaleValue = value;
+            OriginalImagePath = path;
+        }
     }
 }
